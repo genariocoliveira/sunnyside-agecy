@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Fontawesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>Frontend Mentor | Sunnyside agency landing page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="nav">
+      <img src="images/logo.svg" alt="">
+      <nav>
+        <input type="checkbox" id="click">
+        <label for="click" class="menu-btn">
+          <i onclick="mudarIcon(this)" class="fa fa-bars icon fa-4x" aria-hidden="true"></i>
+        </label>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Projects</a></li>
+          <li class="btn-c">
+            <a class="btn-contact" href="#">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+
+    <section id="first-content">
+      <div class="container first-content">
+        <h1>We are creatives</h1>
+        <img class="img-arrow" src="images/icon-arrow-down.svg" alt="">
+      </div>
+    </section>
+
+    <section id="second-content">
+      <div class="second-content container-fluid">
+        <div class="second-content__left">
+          <div class="container-text">
+            <h2>Transform your brand</h2>
+            <p>
+              We are a full-service creative agency specializing in helping brands grow fast.
+              Engage your clients through compelling visuals that do most of the marketing for you.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+        <div class="second-content__right">
+          <img class="img-fluid" src="images/desktop/image-transform.jpg" alt="">
+        </div>
+      </div>
+    </section>
+
+    <section id="three-content">
+      <div class="three-content container-fluid">
+        <div class="three-content__left">
+          <img class="img-fluid" src="images/desktop/image-stand-out.jpg" alt="">
+        </div>
+        <div class="three-content__right">
+          <div class="container-text__stand">
+            <h2>Stand out to the right audience</h2>
+            <p>
+              Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters,
+              we’ll build and extend your brand in digital places.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="four-content">
+      <div class="four-content container-fluid">
+        <div class="four-content__left">
+          <picture class="picture-fluid">
+            <source media="(max-width:550px)" srcset="images/mobile/image-graphic-design.jpg">
+            <img class="img-fluid img-mobile" src="images/desktop/image-graphic-design.jpg" alt="">
+          </picture>
+          
+          <div class="four-content-txt__left">
+            <h2>Graphic design</h2>
+            <p>
+              Great design makes you memorable. We deliver artwork that underscores your brand message and captures
+              potential clients’ attention.
+            </p>
+          </div>
+        </div>
+        <div class="four-content__right">
+          <picture class="picture-fluid">
+            <source media="(max-width:550px)" srcset="images/mobile/image-photography.jpg">
+            <img src="images/desktop/image-photography.jpg" alt="" class="img-fluid">
+          </picture>
+          <div class="four-content-txt__right">
+            <h2>Photography</h2>
+            <p>
+              Increase your credibility by getting the most stunning, high-quality photos that improve your business
+              image.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="five-content">
+      <div class="five-content container">
+        <div class="title-cards">
+          <h2>Client testimonials</h2>
+        </div>
+        <div class="five-content__cards">
+          <div class="card">
+            <figure>
+              <img src="images/image-emily.jpg" alt="">
+              <p>We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were
+                always hit.</p>
+              <h3>Emily R.</h3>
+              <figcaption>Marketing Director</figcaption>
+            </figure>
+          </div>
+          <div class="card">
+            <figure>
+              <img src="images/image-thomas.jpg" alt="">
+              <p>Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and
+                enjoyable experience.</p>
+              <h3>Thomas S.</h3>
+              <figcaption>Chief Operating Officer</figcaption>
+            </figure>
+          </div>
+          <div class="card">
+            <figure>
+              <img src="images/image-jennie.jpg" alt="">
+              <p>Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
+              </p>
+              <h3>Jennie F.</h3>
+              <figcaption>Business Owner</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="six-content">
+      <div class="six-content container-fluid">
+        <div class="img-card__six">
+          <img src="images/desktop/image-gallery-milkbottles.jpg" alt="" class="img-six img-fluid">
+        </div>
+        <div class="img-card__six">
+          <img src="images/desktop/image-gallery-orange.jpg" alt="" class="img-six img-fluid">
+        </div>
+        <div class="img-card__six">
+          <img src="images/desktop/image-gallery-cone.jpg" alt="" class="img-six img-fluid">
+        </div>
+        <div class="img-card__six">
+          <img src="images/desktop/image-gallery-sugarcubes.jpg" alt="" class="img-six img-fluid">
+        </div>
+        <button class="tooltip" onclick="topFunction()" id="myBtn" title="Início">
+          <i class="fa fa-arrow-up return-top" title="Iníno" aria-hidden="true"></i>
+        </button>
+      </div>
+
+    </section>
+  </main>
+  <footer>
+    <div class="container footer">
+      <div class="content-footer">
+        <div class="title-footer">
+          <h2>Sunnyside</h2>
+        </div>
+        <div class="links-footer">
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Projects</a>
+        </div>
+        <div class="icons-footer">
+          <a href="#">
+            <i class="fa fa-facebook-official" aria-hidden="true"></i>
+          </a>
+          <a href="">
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+          </a>
+          <a href="">
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+          </a>
+          <a href="">
+            <i class="fa fa-pinterest" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://github.com/genariocoliveira" target="_blank">Genário Carneiro</a>.
+  </div>
+
+
+  <!-- Scroll top -->
+  <script>
+
+    //Pega o botão
+    let mybutton = document.getElementById("myBtn");
+
+    // Quando o usuário rola para baixo 20px da parte superior do documento, mostra o botão
+    // window.onscroll = function () { scrollFunction() };
+
+
+    // Quando o usuário clicar no botão, role até o topo do documento
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
+
+  <!-- Ionics -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
